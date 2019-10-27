@@ -1,0 +1,41 @@
+<div class="accordion">
+    <as-split direction="vertical">
+        <as-split-area id="area1">
+            <div class="accordion-group">
+                <div id="group1" class="accordion-group-header" (click)="toggleGroup(1)">
+                    Header 1
+                </div>
+                <ul id="list1" class="accordion-group-list">
+                    <li class="accordion-group-item" *ngFor="let item of list">
+                        {{ item }}
+                    </li>
+                </ul>
+            </div>
+        </as-split-area>
+
+        <as-split-area id="area2">
+            <div class="accordion-group">
+                <div id="group2" class="accordion-group-header" (click)="toggleGroup(2)">
+                    Header 2
+                </div>
+                <ul id="list2" class="accordion-group-list">
+                    <li class="accordion-group-item" *ngFor="let item of list">
+                        {{ item }}
+                    </li>
+                </ul>
+            </div>
+        </as-split-area>
+        <as-split-area id="area3">
+            <div class="accordion-group">
+                <div id="group3" class="accordion-group-header" (click)="toggleGroup(3)">
+                    Header 3
+                </div>
+                <ul id="list3" class="accordion-group-list">
+                    <li class="accordion-group-item" *ngFor="let item of list">
+                        {{ item }}
+                    </li>
+                </ul>
+            </div>
+        </as-split-area>
+    </as-split>
+</div>

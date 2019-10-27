@@ -1,0 +1,23 @@
+.accordion {
+    width: 500px;
+    height: 800px;
+    border: 1px solid #ddd;
+    &-group {
+        overflow: hidden;
+    }
+    &-group-header {
+        height: 35px;
+        background-color: #ccc;
+    }
+    &-group-list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        &.collapsed {
+            height: 0;
+        }
+    }
+    &-group-item {
+        height: 35px;
+    }
+}
